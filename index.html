@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            padding: 50px 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+        }
+        
+        nav {
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #333;
+            padding: 15px 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            padding-bottom: 120px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .projects {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+        
+        .project-card:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 25px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome</h2>
+        <p>Hi! I'm a creative professional. This is my portfolio showcasing my projects and work.</p>
+        
+        <h3>Featured Projects</h3>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Description of your first project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Description of your second project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>Description of your third project.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>

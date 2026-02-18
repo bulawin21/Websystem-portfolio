@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            padding: 50px 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+        }
+        
+        nav {
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #333;
+            padding: 15px 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            padding-bottom: 120px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border: 1px solid #333;
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        footer {
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 25px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out to me anytime!</p>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> jake.bulawin@urios.edu.ph</p>
+            <p><strong>Phone:</strong> 091231312</p>
+            <p><strong>Location:</strong> Butuan City, Philippines</p>
+        </div>
+        
+        <h3>Send a Message</h3>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
