@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -127,6 +127,30 @@
             color: #667eea;
         }
         
+        .project-details {
+            font-size: 0.95em;
+            color: #888;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .tech-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
         footer {
             border-top: 1px solid #ddd;
             text-align: center;
@@ -141,9 +165,9 @@
 <body>
 
     <header>
-        <h1>Professional Car Maintenance Services</h1>
+        <h1>My Portfolio</h1>
     </header>
-    
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -152,38 +176,45 @@
     </nav>
 
     <div class="container">
-        <h2>Welcome to Our Service</h2>
-        <p>We provide professional and reliable car maintenance services to keep your vehicle running smoothly. With years of experience, we deliver quality workmanship and exceptional customer care.</p>
+        <h2>Featured Projects</h2>
+        <p>A showcase of my professional projects and work achievements. Each project demonstrates my expertise in delivering quality solutions.</p>
         
-        <h3>Our Services</h3>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Oil Change & Filter Service</h3>
-                <p>Regular oil changes to maintain engine health and performance. We use premium quality oils and genuine filters.</p>
-            </div>
-            <div class="project-card">
-                <h3>Brake System Maintenance</h3>
-                <p>Complete brake inspections, pad replacements, and rotor servicing to ensure your safety on the road.</p>
-            </div>
-            <div class="project-card">
-                <h3>Tire & Wheel Service</h3>
-                <p>Tire rotation, balancing, alignment, and replacement services for optimal performance and safety.</p>
-            </div>
-        </div>
-        
-        <h3>My Portfolio</h3>
         <div class="projects">
             <div class="project-card">
                 <h3>Project One</h3>
-                <p>Description of your first project.</p>
+                <p>A comprehensive web application that showcases modern design principles and responsive functionality.</p>
+                <div class="project-details">
+                    <p><strong>Role:</strong> Lead Developer</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
             </div>
             <div class="project-card">
                 <h3>Project Two</h3>
-                <p>Description of your second project.</p>
+                <p>An innovative solution that integrates multiple technologies to deliver seamless user experience and performance.</p>
+                <div class="project-details">
+                    <p><strong>Role:</strong> Full Stack Developer</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                </div>
             </div>
             <div class="project-card">
                 <h3>Project Three</h3>
-                <p>Description of your third project.</p>
+                <p>A data-driven platform designed to provide insights and analytics with an intuitive interface and robust backend.</p>
+                <div class="project-details">
+                    <p><strong>Role:</strong> Frontend Developer</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">SQL</span>
+                </div>
             </div>
         </div>
     </div>

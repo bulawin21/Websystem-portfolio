@@ -12,113 +12,150 @@
         }
         
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
             line-height: 1.6;
+            min-height: 100vh;
         }
         
         header {
-            padding: 50px 20px;
-            border-bottom: 1px solid #ddd;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
         }
         
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: -1px;
         }
         
         nav {
-            border-bottom: 1px solid #ddd;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
         nav a {
-            color: #333;
-            padding: 15px 25px;
+            color: #2c3e50;
+            padding: 15px 30px;
             text-decoration: none;
             display: inline-block;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
         }
         
         nav a:hover {
-            background-color: #f5f5f5;
-            color: #000;
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background-color: rgba(102, 126, 234, 0.05);
         }
         
         .container {
             max-width: 900px;
-            margin: 50px auto;
+            margin: 60px auto;
             padding: 0 20px;
             padding-bottom: 120px;
         }
         
         h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #333;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            color: #2c3e50;
+            font-weight: 700;
         }
         
         h3 {
-            font-size: 1.4em;
-            margin-top: 30px;
-            margin-bottom: 20px;
+            font-size: 1.5em;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-weight: 600;
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             color: #555;
+            font-size: 1.05em;
         }
         
         .contact-info {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin: 20px 0;
-            border: 1px solid #ddd;
+            background: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #667eea;
         }
         
         .contact-info p {
-            margin: 10px 0;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        
+        .contact-info strong {
+            color: #667eea;
         }
         
         .form-group {
-            margin-bottom: 18px;
+            margin-bottom: 25px;
         }
         
         label {
             display: block;
-            margin-bottom: 6px;
-            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.05em;
         }
         
         input, textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
             font-size: 1em;
-            font-family: Arial, sans-serif;
-            transition: 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease;
+            background-color: white;
         }
         
         input:focus, textarea:focus {
             outline: none;
-            border: 1px solid #333;
-            background-color: #f9f9f9;
+            border-color: #667eea;
+            background-color: #fff;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
         
         button {
-            background-color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px 25px;
+            padding: 14px 40px;
             border: none;
-            font-size: 1em;
+            border-radius: 8px;
+            font-size: 1.05em;
             cursor: pointer;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
         
         button:hover {
-            background-color: #555;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(0);
         }
         
         footer {
@@ -141,12 +178,13 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
         <a href="contacts.html">Contact</a>
     </nav>
 
     <div class="container">
-        <h2>Get In Touch</h2>
-        <p>Feel free to reach out to me anytime!</p>
+        <h2>Contact Us</h2>
+        <p>Get in touch with us to schedule your car maintenance service. We're here to help keep your vehicle running great!</p>
         
         <div class="contact-info">
             <p><strong>Email:</strong> jake.bulawin@urios.edu.ph</p>
@@ -154,21 +192,25 @@
             <p><strong>Location:</strong> Butuan City, Philippines</p>
         </div>
         
-        <h3>Send a Message</h3>
+        <h3>Schedule Your Service</h3>
         <form>
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="vehicle">Vehicle Details</label>
+                <input type="text" id="vehicle" name="vehicle" placeholder="Make, Model, Year" required>
             </div>
-            <button type="submit">Send Message</button>
+            <div class="form-group">
+                <label for="message">Service Request</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe the service you need..." required></textarea>
+            </div>
+            <button type="submit">Schedule Service</button>
         </form>
     </div>
 
